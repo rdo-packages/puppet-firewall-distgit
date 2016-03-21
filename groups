@@ -1,3 +1,5 @@
-# UUID                                  	Group Name
-#
-791939a593040bbe84aa3cb4992b60e8994cc0b8	puppet-firewall-distgit-ptl
+# UUID          Group Name
+6ddfecad023c6f4fa3ac8c4d2583c502ea675a73 	Non-Interactive Users
+a048ae34e41379097c1d32323c7c205abf16222b       	puppet-firewall-distgit-core
+791939a593040bbe84aa3cb4992b60e8994cc0b8        	puppet-firewall-distgit-ptl
+global:Registered-Users		Registered Users
