@@ -7,8 +7,8 @@
 
 
 Name:           puppet-firewall
-Version:        XXX
-Release:        XXX
+Version:        1.8.1
+Release:        1%{?alphatag}%{?dist}
 Summary:        Manages Firewalls such as iptables
 License:        Apache-2.0
 
@@ -48,4 +48,7 @@ cp -rp * %{buildroot}/%{_datadir}/openstack-puppet/modules/firewall/
 
 
 %changelog
+* Wed Sep 21 2016 Haikel Guemar <hguemar@fedoraproject.org> - 1.8.1-1.e70157e.git
+- Newton update 1.8.1 (e70157ef0692b679470a980d7051c4b73000ed9f)
+
 
