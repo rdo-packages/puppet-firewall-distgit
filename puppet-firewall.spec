@@ -1,4 +1,10 @@
+%{!?upstream_version: %global upstream_version %{commit}}
 %define upstream_name puppetlabs-firewall
+%global commit e70157ef0692b679470a980d7051c4b73000ed9f
+%global shortcommit %(c=%{commit}; echo ${c:0:7})
+# DO NOT REMOVE ALPHATAG
+%global alphatag .%{shortcommit}git
+
 
 Name:           puppet-firewall
 Version:        XXX
@@ -8,7 +14,7 @@ License:        Apache-2.0
 
 URL:            http://github.com/puppetlabs/puppetlabs-firewall
 
-Source0:        https://github.com/puppetlabs/puppetlabs-firewall/archive/%{version}.tar.gz
+Source0:        https://github.com/puppetlabs/%{upstream_name}/archive/%{commit}.tar.gz#/%{upstream_name}-%{shortcommit}.tar.gz
 
 BuildArch:      noarch
 
