@@ -10,7 +10,7 @@ Name:           puppet-firewall
 Version:        XXX
 Release:        XXX
 Summary:        Manages Firewalls such as iptables
-License:        Apache-2.0
+License:        ASL 2.0
 
 URL:            http://github.com/puppetlabs/puppetlabs-firewall
 
