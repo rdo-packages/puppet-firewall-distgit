@@ -1,14 +1,14 @@
 %{!?upstream_version: %global upstream_version %{commit}}
 %define upstream_name puppetlabs-firewall
-%global commit e70157ef0692b679470a980d7051c4b73000ed9f
+%global commit 2f892e904162117e45daeb2ddaa955135b5c1c6b
 %global shortcommit %(c=%{commit}; echo ${c:0:7})
 # DO NOT REMOVE ALPHATAG
 %global alphatag .%{shortcommit}git
 
 
 Name:           puppet-firewall
-Version:        XXX
-Release:        XXX
+Version:        1.8.2
+Release:        2%{?alphatag}%{?dist}
 Summary:        Manages Firewalls such as iptables
 License:        ASL 2.0
 
@@ -48,5 +48,7 @@ cp -rp * %{buildroot}/%{_datadir}/openstack-puppet/modules/firewall/
 
 
 %changelog
+* Fri Aug 25 2017 Alfredo Moralejo <amoralej@redhat.com> 1.8.2-2.2f892e9git
+- Pike update 1.8.2 (2f892e904162117e45daeb2ddaa955135b5c1c6b)
 
 
