@@ -15,7 +15,6 @@ License:        ASL 2.0
 URL:            http://github.com/puppetlabs/puppetlabs-firewall
 
 Source0:        https://github.com/puppetlabs/%{upstream_name}/archive/%{commit}.tar.gz#/%{upstream_name}-%{shortcommit}.tar.gz
-Patch0:         0001-rhel8-support.patch
 
 BuildArch:      noarch
 
@@ -26,8 +25,6 @@ Manages Firewalls such as iptables
 
 %prep
 %setup -q -n %{upstream_name}-%{upstream_version}
-# https://github.com/puppetlabs/puppetlabs-firewall/pull/824
-%patch0 -p1
 
 find . -type f -name ".*" -exec rm {} +
 find . -size 0 -exec rm {} +
