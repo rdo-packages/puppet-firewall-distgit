@@ -51,3 +51,4 @@ cp -rp * %{buildroot}/%{_datadir}/openstack-puppet/modules/firewall/
 * Thu Oct 3 2019 RDO <dev@lists.rdoproject.org> 2.1.0-1.4f4437agit
 - Update to post 2.1.0 (4f4437ad800d5697bafc8346c1627e1c4b5b607f)
 
+
