@@ -1,14 +1,14 @@
 %{!?upstream_version: %global upstream_version %{commit}}
 %define upstream_name puppetlabs-firewall
-%global commit e70157ef0692b679470a980d7051c4b73000ed9f
+%global commit 6e08f9678d8c4a80e96888a1a82b5fabd647efec
 %global shortcommit %(c=%{commit}; echo ${c:0:7})
 # DO NOT REMOVE ALPHATAG
 %global alphatag .%{shortcommit}git
 
 
 Name:           puppet-firewall
-Version:        XXX
-Release:        XXX
+Version:        2.5.0
+Release:        2%{?alphatag}%{?dist}
 Summary:        Manages Firewalls such as iptables
 License:        ASL 2.0
 
@@ -48,3 +48,6 @@ cp -rp * %{buildroot}/%{_datadir}/openstack-puppet/modules/firewall/
 
 
 %changelog
+* Thu Mar 25 2021 RDO <dev@lists.rdoproject.org> 2.5.0-2.6e08f96git
+- Update to post 2.5.0 (6e08f9678d8c4a80e96888a1a82b5fabd647efec)
+
