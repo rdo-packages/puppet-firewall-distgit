@@ -7,8 +7,8 @@
 
 
 Name:           puppet-firewall
-Version:        2.5.0
-Release:        2%{?alphatag}%{?dist}
+Version:        2.6.0
+Release:        1%{?alphatag}%{?dist}
 Summary:        Manages Firewalls such as iptables
 License:        ASL 2.0
 
@@ -48,6 +48,9 @@ cp -rp * %{buildroot}/%{_datadir}/openstack-puppet/modules/firewall/
 
 
 %changelog
+* Fri Sep 03 2021 RDO <dev@lists.rdoproject.org> 2.6.0-1.6e08f96git
+- Update to 2.6.0
+
 * Thu Mar 25 2021 RDO <dev@lists.rdoproject.org> 2.5.0-2.6e08f96git
 - Update to post 2.5.0 (6e08f9678d8c4a80e96888a1a82b5fabd647efec)
 
