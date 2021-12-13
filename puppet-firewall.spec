@@ -48,3 +48,4 @@ cp -rp * %{buildroot}/%{_datadir}/openstack-puppet/modules/firewall/
 
 
 %changelog
+# REMOVEME: error caused by commit https://github.com/puppetlabs/puppetlabs-firewall/commit/0c51e18220a306817074a582a6a0c4d5f150c086
