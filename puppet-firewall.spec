@@ -1,24 +1,20 @@
-%{!?upstream_version: %global upstream_version %{commit}}
+%{!?upstream_version: %global upstream_version %{version}%{?milestone}}
 %define upstream_name puppetlabs-firewall
-%global commit e70157ef0692b679470a980d7051c4b73000ed9f
-%global shortcommit %(c=%{commit}; echo ${c:0:7})
-# DO NOT REMOVE ALPHATAG
-%global alphatag .%{shortcommit}git
-
 
 Name:           puppet-firewall
-Version:        XXX
-Release:        XXX
+Version:        7.0.2
+Release:        1%{?dist}
 Summary:        Manages Firewalls such as iptables
 License:        ASL 2.0
 
 URL:            http://github.com/puppetlabs/puppetlabs-firewall
 
-Source0:        https://github.com/puppetlabs/%{upstream_name}/archive/%{commit}.tar.gz#/%{upstream_name}-%{shortcommit}.tar.gz
+Source0:        https://github.com/puppetlabs/%{upstream_name}/archive/%{upstream_version}.tar.gz#/%{upstream_name}-%{upstream_version}.tar.gz
 
 BuildArch:      noarch
 
 Requires:       puppet >= 2.7.0
+Requires:       rubygem(puppet-resource_api) >= 1.8.18
 
 %description
 Manages Firewalls such as iptables
@@ -48,4 +44,6 @@ cp -rp * %{buildroot}/%{_datadir}/openstack-puppet/modules/firewall/
 
 
 %changelog
+* Tue Oct 17 2023 RDO <dev@lists.rdoproject.org> 7.0.2-1
+- Update to 7.0.2
 
