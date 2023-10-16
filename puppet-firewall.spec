@@ -19,6 +19,7 @@ Source0:        https://github.com/puppetlabs/%{upstream_name}/archive/%{commit}
 BuildArch:      noarch
 
 Requires:       puppet >= 2.7.0
+Requires:       rubygem(puppet-resource_api) >= 1.8.18
 
 %description
 Manages Firewalls such as iptables
