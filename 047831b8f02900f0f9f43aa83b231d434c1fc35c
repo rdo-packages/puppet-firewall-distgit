@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "5438ffc5_f8db2450",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 4
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 635
+      },
+      "writtenOn": "2023-10-17T14:42:54Z",
+      "side": 1,
+      "message": "Waiting for https://review.rdoproject.org/r/c/rdoinfo/+/50565 to pass CI and merged.",
+      "revId": "047831b8f02900f0f9f43aa83b231d434c1fc35c",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7"
+    }
+  ]
+}
