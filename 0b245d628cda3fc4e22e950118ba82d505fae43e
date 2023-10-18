@@ -1,0 +1,8 @@
+Verified+2: Zuul CI <zuul@review.rdoproject.org>
+Code-Review+2: Alfredo Moralejo <amoralej@redhat.com>
+Workflow+1: Alfredo Moralejo <amoralej@redhat.com>
+Submitted-by: Zuul CI <zuul@review.rdoproject.org>
+Submitted-at: Wed, 18 Oct 2023 15:17:09 +0000
+Reviewed-on: https://review.rdoproject.org/r/c/puppet/puppet-firewall-distgit/+/50513
+Project: puppet/puppet-firewall-distgit
+Branch: refs/heads/rpm-master
