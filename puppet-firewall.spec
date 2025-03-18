@@ -2,8 +2,8 @@
 %define upstream_name puppetlabs-firewall
 
 Name:           puppet-firewall
-Version:        XXX
-Release:        XXX
+Version:        8.1.4
+Release:        %{?dist}
 Summary:        Manages Firewalls such as iptables
 License:        ASL 2.0
 
@@ -44,4 +44,7 @@ cp -rp * %{buildroot}/%{_datadir}/openstack-puppet/modules/firewall/
 
 
 %changelog
+* Tue Mar 18 2025 RDO <dev@lists.rdoproject.org> 8.1.4-
+- Update to 8.1.4
+
 
